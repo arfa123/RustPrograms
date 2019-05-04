@@ -4,7 +4,8 @@ fn main() {
     let number = 3;
     if number < 5 { // condition must be of type "bool"
         println!("condition was true");
-    } else {
+    }
+    else {
         println!("condition was false");
     }
     // ****** Handling multiple with else if ******
@@ -50,16 +51,16 @@ fn main() {
 
     // ******** Conditional loops with while ********
     let mut number = 3;
-    while number != 0 {
+    let x = while number != 0 {
         println!("{}!", number);
-        number -= 1;
-    }
+        number -= 1
+    };
     println!("LIFTOFF!!!");
 
     // ***** Looping through a collection with for *****
     let a = [10, 20, 30, 40, 50];
-    for element in a.iter() {
-        println!("the value is: {}", element);
+    for element in 1..3 {
+        print!("the value is: {}", element);
     }
     for number in (1..4).rev() {
         println!("{}!", number);

@@ -1,6 +1,6 @@
 fn main() {
     println!("Hello, world!");
-    another_function(5, (6, -1), [2, 4]);
+    another_function(5, (6, -1), [2, 4], 'c', "abc");
 
     // ****** Function bodies contain statements and expressions ******
     // Function bodies are made up of a series of statements optionally ending in an expression
@@ -23,13 +23,13 @@ fn main() {
     let x = plus_one(3);
     println!("The value of x is: {}", x)
 }
-fn another_function(x: u8, tup: (u8, i8), arr: [u8; 2]) { // must declare the type of each parameter
+fn another_function(x: u8, tup: (u8, i8), arr: [u8; 2], c: char, s: &str) { // must declare the type of each parameter
     println!("Value of x is: {}", x);
     println!("Value of tup second index is: {}", tup.0);
     println!("Value of a's first index is: {}", arr[0]);
 }
-fn five() -> i32 {
-    5
+fn five() -> f32 {
+    5.0
 }
 fn plus_one(x: i32) -> i32 {
     x + 1 //if we place a semicolon at the end of the line containing x + 1,

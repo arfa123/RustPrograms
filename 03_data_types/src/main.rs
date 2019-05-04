@@ -26,10 +26,10 @@ fn main() {
     println!("Value of x is: {} and y is: {}", x, y);
 
     // ----------- Numeric Operations -----------
-    let sum = 5 + 10; // addition
-    let difference = 95.5 - 4.3; // subtraction
-    let product = 4 * 30; // multiplication
-    let quotient = 56.7 / 32.2; // division
+    let sum = 5.7 + 10.5; // addition
+    let difference = 9.0 - 4.3; // subtraction
+    let product = 4.0 * 30.5; // multiplication
+    let quotient = 56.0 / 32.2; // division
     let remainder = 43 % 5; // remainder
     println!("{}, {}, {}, {}, {}", sum, difference, product, quotient, remainder);
 
@@ -54,11 +54,11 @@ fn main() {
     // A tuple is a general way of grouping together some number of other values with a variety of types
     // into one compound type. Tuples have a fixed length: once declared, they cannot grow or shrink in size.
     // Each position in the tuple has a type
-    let tup: (i32, f64, u8) = (500, 6.4, 1);
-    let (x, y, z) = tup; // destructure a tuple value
+    let tup: (i32, f64, u8, char, &str) = (500, 6.4, 1, 'c', "abc");
+    let (x, y, z, c, s) = tup; // destructure a tuple value
     let five_hundred = tup.0; // access a tuple element directly by using a period (.) followed by the index of the value we want to access
     let six_point_four = tup.1;
-    println!("{}, {}, {}, {}, {}", x, y, z, five_hundred, six_point_four);
+    println!("{}, {}, {}, {}, {}, {}, {}", x, y, z, c, s, five_hundred, six_point_four);
 
     // ****************** b. ARRAY TYPE ******************
     // Another way to have a collection of multiple values is with an array.
